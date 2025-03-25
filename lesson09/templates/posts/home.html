@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="wm_light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Weather Mate - Accurate Weather Forecasts and Climate Updates">
+    <meta name="description" content="Weather Mate provides accurate weather forecasts, live updates, climate change insights, and much more. Stay prepared with our detailed reports and analysis.">
+    <meta name="author" content="Lucid Solutions">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Weather Mate, weather forecasts, live weather updates, climate change, forest weather, weekly weather history, accurate weather reports">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <title>Weather Mate - Accurate Weather Forecasts and Climate Updates</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="xxx/image/png" href="assets/apple-touch-icon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Weather Mate - Your Reliable Weather Companion">
+    <meta property="og:description" content="Stay ahead of the weather with Weather Mate. Accurate forecasts, climate updates, and detailed weather insights at your fingertips.">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:xxx/image" content="#/xxx/images/og-xxx/image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_xxx/image">
+    <meta property="twitter:url" content="#">
+    <meta property="twitter:title" content="Weather Mate - Accurate Weather Forecasts and Updates">
+    <meta property="twitter:description" content="Get the latest weather forecasts, live updates, and climate insights with Weather Mate. Your one-stop solution for all weather information.">
+    <meta property="twitter:xxx/image" content="#/xxx/images/twitter-xxx/image.jpg">
+    <meta name="twitter:site" content="@WeatherMate">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="xxx/css/all.min.css">
+    <link rel="stylesheet" href="xxx/css/bootstrap.min.css">
+    <link rel="stylesheet" href="xxx/css/animate.min.css">
+    <link rel="stylesheet" href="xxx/css/slick-theme.css">
+    <link rel="stylesheet" href="xxx/css/slick.css">
+    <link rel="stylesheet" href="xxx/css/select2.min.css">
+    <link rel="stylesheet" href="xxx/css/style.css">
+</head>
+
+<body class="body-color">
+
+   <!-- preloader -->
+   <div class="preloader">
+        <div class="preloader-img">
+            <img src="xxx/picture/logo-icon.png" alt="Loading..." class="weather-icon">
+        </div>
+    </div>
+    <!-- preloader -->
+
+    <!-- Start switchbtn -->
+    <button class="btn primary-btn w-unset p-2 switchbtn" type="button" id="btnSwitch" aria-label="toggle mode">
+      <i class="fa fa-moon fs-5"></i>
+    </button>
+    <!-- End switchbtn -->
+
+    <!--Start Hero Banner Section-->
+   <section id="hero" class="hero section">
+    <header class="header-main pt-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-xl rounded-pill nav-bg">
+                <a href="">
+                    <img src="xxx/picture/logo.png" alt="WeatherMate" width="180">
+                </a>
+                <button class="navbar-toggler" type="button" id="offcanvasbutton" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="offcanvas open"><i class="fa-solid fa-bars-staggered white-text"></i>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2">
+                    <div class="offcanvas-header  py-3">
+                        <a href="#index" class="d-block d-lg-none pt-3">
+                            <img src="xxx/picture/logo.png" alt="WeatherMate" width="120">
+                        </a>
+                        <button type="button" class="btn-close close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fa-solid fa-xmark white-text fs-4"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto gap-xl-4 align-items-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link secondary-font active text-uppercase fw-semibold white-text  nav-link-text" aria-current="page" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link secondary-font text-uppercase fw-semibold white-text nav-link-text" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link secondary-font text-uppercase fw-semibold white-text nav-link-text" href="news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link secondary-font text-uppercase fw-semibold white-text nav-link-text" href="forecast.html">Forecast</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link secondary-font text-uppercase fw-semibold white-text nav-link-text" href="climate-change.html">Climate Change</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link secondary-font text-uppercase fw-semibold white-text nav-link-text" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <a href="#subscribe" class="btn primary-btn rounded-pill me-lg-2 rounded-0 ms-lg-3 secondary-font">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6  wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+                <p class="white-text fs-4">Weather & Forecast</p>
+                <h1 class="header-title display-5 fw-bold white-text pb-2">Sunshine or Storm,
+                    We’ve Got You Covered!</h1>
+                <p class="white-text py-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <div class="header-buttons">
+                    <a href="about.html" class="btn primary-btn rounded-pill secondary-font">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-6 py-5 wow animate__animated animate__fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+                <div class="banner float-lg-end">
+                    <img src="xxx/picture/side-img.png" alt="Wather Highlights" class="animated-xxx/image">
+                  </div>
+            </div>
+        </div>
+    </div>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 24 150 28 " preserveaspectratio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3"></use>
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0"></use>
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9"></use>
+      </g>
+    </svg>
+   </section>
+    <!--End Hero Banner Section-->
+
+    <!--Start About Section-->
+    <section class="about-section py-5 my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class=" col-lg-5 col-xl-6 wow fadeIn" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                    <div class="py-3">
+                        <span class="text-uppercase py-2 fw-semibold color-5 fs-5">About</span>
+                        <h2 class="heading-text h1 fw-bold">Sunshine or Storm,
+                            We’ve Got You Covered!</h2>
+                            <p class="para-text">
+                                There are many variations of passages of Lorem Ipsum available, but the have suffered alteration
+                                in some form, by injected humour.
+                            </p>
+                            <p class="para-text">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                believable.
+                            </p>
+                            <p class="para-text">
+                                There are many variations of passages of Lorem Ipsum available, but the have suffered alteration
+                                in some form, by injected humour.
+                            </p>
+                            <a href="about.html" class="btn primary-btn rounded-pill  rounded-0 secondary-font">Read More</a>
+                     </div>
+                </div>
+                <div class=" col-lg-7 col-xl-6  wow fadeIn" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                    <div class="gallery">
+                        <div class="grid-wrapper">
+                            <div class="big">
+                                <img src="xxx/picture/01_img.webp" alt="wather-information-1" class="img-fluid w-100 zoom-xxx/image">
+                            </div>
+                            <div class="">
+                                <img src="xxx/picture/02_img.webp" alt="wather-information-2" class="img-fluid w-100 zoom-xxx/image">
+                            </div>
+                            <div class="">
+                                <img src="xxx/picture/03_img.webp" alt="wather-information-3" class="img-fluid w-100 zoom-xxx/image">
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Start About Section-->
+
+    <!--Start Today's Weather Forecast Section-->
+    <section class="weather-section primary-gradient">
+        <div class="container position-relative">
+                <img src="xxx/picture/Suncloud.png" width="150" class="position-absolute ws-img  end-0 " alt="">
+                <img src="xxx/picture/Suncloud.png" width="150" class="position-absolute ws-img bottom-0 start-0 " alt="">
+            <div class="py-3 text-center mb-5">
+                <h2 class="white-text h1 fw-bold wow animate__animated animate__zoomIn">Today's Weather Forecast
+                </h2>
+                <p class="white-text wow animate__animated animate__zoomIn">Select your location to get real-time weather updates.</p>
+                <form>
+                    <div class="form-group mx-70 mx-auto wow animate__animated animate__zoomIn">
+                      <select class="location-select form-select wow animate__animated animate__zoomIn" name="state">
+                         <option value="">Select Location</option>
+                         <option value="">Location 1</option>
+                         <option value="">Location 2</option>
+                         <option value="">Location 3</option>
+                      </select>
+                    </div>
+                  </form>
+            </div>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-3">
+                    <div class="weather-card secondary-gradient rounded-4 py-4 wow animate__animated animate__zoomIn">
+                        <img src="xxx/picture/sun.png" class="pb-3 sun-icon" alt="WatherMate Sun Circle">
+                        <h2 class="white-text display-3 fw-bold">30°C</h2>
+                        <p class="white-text  fs-4">Sunny and Clear</p>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="forecast-tab py-4 secondary-gradient rounded-4 wow animate__animated animate__zoomIn">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="primary-color p-3 text-white rounded-2">Today</span>
+                            <p class="fw-semibold white-text m-0 current-date"></p>
+                        </div>
+                        <div class="row align-items-center text-center mt-4 border-top py-3">
+
+                            <div class="col-6 col-sm-4 col-lg mb-4 mb-lg-0  forecast-item">
+
+                                <p class="white-text fs-4">19°C</p>
+                                <img src="xxx/picture/weather-icon-1.png" class="img weather-icon my-2" alt="weather-icon">
+                                <p class="white-text">Humidity 65%</p>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg mb-4 mb-lg-0 forecast-item">
+                                <p class="white-text fs-4">20°C</p>
+                                   <img src="xxx/picture/weather-icon-2.png" class="img weather-icon my-2" alt="weather-icon">
+                                <p class="white-text">Wind: 14 km/h SW</p>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg mb-4 mb-lg-0 forecast-item">
+                                <p class="white-text fs-4">14°C</p>
+                                <img src="xxx/picture/weather-icon-3.png" class="img weather-icon my-2" alt="weather-icon">
+                                <p class="white-text">Chance of Rain: 10%</p>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg mb-4 mb-lg-0 forecast-item">
+                                <p class="white-text fs-4">21°C</p>
+                                <img src="xxx/picture/weather-icon-4.png" class="img weather-icon my-2" alt="weather-icon">
+                                <p class="white-text">Sunrise: 6:22 AM</p>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg mb-4 mb-lg-0 forecast-item">
+                                <p class="white-text fs-4">29°C</p>
+                                <img src="xxx/picture/weather-icon-5.png" class="img weather-icon my-2" alt="weather-icon">
+                                <p class="white-text">Sunset: 6:32 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Today's Weather Forecast Section-->
+
+    <!--Start Weekly Weather History Section-->
+    <section class="body-color py-5 weekly-weather">
+        <div class="container">
+            <div class="py-3 text-center wow animate__animated animate__zoomIn">
+                <h2 class="heading-text h1 fw-bold">Weekly Weather History
+                </h2>
+                <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Bibendum cursus</p>
+            </div>
+            <div class="row justify-content-center py-5  g-3">
+                <div class="col-sm col-md-4 col-lg-3">
+                    <div class="weather-card card-color p-4 rounded-4 shadow text-center wow fadeInUp">
+                        <div class="card-inner">
+                            <div class="m-auto icon">
+                                <img src="xxx/picture/weather-icon-1.png" alt="Weather Icon" class="weather-icon img-fluid">
+                                </div>
+                                <p class="temp fs-4 fw-semibold heading-text">12°C -2°C</p>
+                                <p class="day fs-4 fw-semibold heading-text today-day">Mon</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm col-md-4 col-lg-3">
+                    <div class="weather-card card-color p-4 rounded-4 shadow text-center wow fadeInUp">
+                        <div class="card-inner">
+                        <div class="m-auto icon">
+                        <img src="xxx/picture/weather-icon-2.png" alt="Weather Icon" class="weather-icon img-fluid">
+                        </div>
+                        <p class="temp fs-4 fw-semibold heading-text">17°C -3°C</p>
+                        <p class="day fs-4 fw-semibold heading-text today-day">Tue</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm col-md-4 col-lg-3">
+                    <div class="weather-card card-color p-4 rounded-4 shadow text-center wow fadeInUp">
+                        <div class="card-inner">
+                        <div class="m-auto icon">
+                        <img src="xxx/picture/weather-icon-3.png" alt="Weather Icon" class="weather-icon img-fluid">
+                        </div>
+                        <p class="temp fs-4 fw-semibold heading-text">25°C -20°C</p>
+                        <p class="day fs-4 fw-semibold heading-text today-day">Wed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm col-md-4 col-lg-3">
+                    <div class="weather-card card-color p-4 rounded-4 shadow text-center wow fadeInUp">
+                        <div class="card-inner">
+                        <div class="m-auto icon">
+                        <img src="xxx/picture/weather-icon-4.png" alt="Weather Icon" class="weather-icon img-fluid">
+                        </div>
+                        <p class="temp fs-4 fw-semibold heading-text">15°C -19°C</p>
+                        <p class="day fs-4 fw-semibold heading-text today-day">Thurs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm col-md-4 col-lg-3">
+                    <div class="weather-card card-color p-4 rounded-4 shadow text-center  wow fadeInUp">
+                        <div class="card-inner">
+                        <div class="m-auto icon">
+                        <img src="xxx/picture/weather-icon-5.png" alt="Weather Icon" class="weather-icon img-fluid">
+                        </div>
+                        <p class="temp fs-4 fw-semibold heading-text">19°C -21°C</p>
+                        <p class="day fs-4 fw-semibold heading-text today-day">Fri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm col-md-4 col-lg-3">
+                    <div class="weather-card card-color p-4 rounded-4 shadow text-center  wow fadeInUp">
+                        <div class="card-inner">
+                        <div class="m-auto icon">
+                        <img src="xxx/picture/weather-icon-6.png" alt="Weather Icon" class="weather-icon img-fluid">
+                        </div>
+                        <p class="temp fs-4 fw-semibold heading-text">18°C -21°C</p>
+                        <p class="day fs-4 fw-semibold heading-text today-day">Sat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm col-md-4 col-lg-3">
+                    <div class="weather-card card-color p-4 rounded-4 shadow text-center  wow fadeInUp">
+                        <div class="card-inner">
+                        <div class="m-auto icon">
+                        <img src="xxx/picture/weather-icon-7.png" alt="Weather Icon" class="weather-icon img-fluid">
+                        </div>
+                        <p class="temp fs-4 fw-semibold heading-text">21°C -19°C</p>
+                        <p class="day fs-4 fw-semibold heading-text today-day">Sun</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Weekly Weather History Section-->
+
+    <!--Start Recent Search Weather Section-->
+    <section class="responsive slider alt-color py-5">
+        <div class="container">
+            <div class="py-3 text-center wow animate__animated animate__zoomIn">
+                <h2 class="heading-text h1 fw-bold">Recent Search Weather
+                </h2>
+                <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Bibendum cursus</p>
+            </div>
+        <div class="wrapper">
+            <div class="my-slider">
+                <div class="img-overlay">
+                    <a href="javascript:void(0)">
+                        <img src="xxx/picture/01_img1.webp" alt="insta-img-1">
+                        <div class="overlay">
+                            <div class="text text-center">
+                                <p class="fs-4 white-text">Paris</p>
+                                <h3>21°</h3>
+                                <p class="fs-4 white-text">Raining </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-overlay">
+                    <a href="javascript:void(0)">
+                        <img src="xxx/picture/02_img1.webp" alt="insta-img-1">
+                        <div class="overlay">
+                            <div class="text text-center">
+                                <p class="fs-4 white-text">Singapur</p>
+                                <h3>24°</h3>
+                                <p class="fs-4 white-text">Cloudy</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-overlay">
+                    <a href="javascript:void(0)">
+                        <img src="xxx/picture/03_img1.webp" alt="insta-img-1">
+                        <div class="overlay">
+                            <div class="text text-center">
+                                <p class="fs-4 white-text">New York</p>
+                                <h3>23°</h3>
+                                <p class="fs-4 white-text">Thundary</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="img-overlay">
+                    <a href="javascript:void(0)">
+                        <img src="xxx/picture/03_img1.webp" alt="insta-img-1">
+                        <div class="overlay">
+                            <div class="text text-center">
+                                <p class="fs-4 white-text">New York</p>
+                                <h3>23°</h3>
+                                <p class="fs-4 white-text">Thundary</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-overlay">
+                    <a href="javascript:void(0)">
+                        <img src="xxx/picture/04_img.webp" alt="insta-img-1">
+                        <div class="overlay">
+                            <div class="text text-center">
+                                <p class="fs-4 white-text">Dubai</p>
+                                <h3>24°</h3>
+                                <p class="fs-4 white-text">Cloudy </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+              </div>
+          </div>
+          </div>
+    </section>
+    <!--End Recent Search Weather Section-->
+
+    <!--Start Top Weather Section-->
+    <section class="body-color py-5">
+        <div class="container">
+                <div class="py-3 text-center wow animate__animated animate__zoomIn">
+                    <h2 class="heading-text h1 fw-bold">Top Weather Forecast</h2>
+                    <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Bibendum cursus</p>
+                </div>
+            <!-- Forecast Cards -->
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="forecast-card primary-gradient rounded-4  wow fadeInUp">
+                        <div class="city-card card-color m-auto rounded-3">
+                        <img src="xxx/picture/01_img.png" alt="Canada Flag">
+                        </div>
+                        <h4 class="white-text pt-3">Canada</h4>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="forecast-card primary-gradient rounded-4  wow fadeInUp">
+                        <div class="city-card card-color m-auto rounded-3">
+                        <img src="xxx/picture/02_img.png" alt="Germany Flag">
+                        </div>
+                        <h4 class="white-text pt-3">Germany</h4>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="forecast-card primary-gradient rounded-4  wow fadeInUp">
+                        <div class="city-card card-color m-auto rounded-3">
+                        <img src="xxx/picture/03_img.png" alt="Ireland Flag">
+                        </div>
+                        <h4 class="white-text pt-3">Ireland</h4>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="forecast-card primary-gradient rounded-4  wow fadeInUp">
+                        <div class="city-card card-color m-auto rounded-3">
+                        <img src="xxx/picture/04_img.png" alt="USA Flag">
+                        </div>
+                        <h4 class="white-text pt-3">USA</h4>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="forecast-card primary-gradient rounded-4  wow fadeInDown">
+                        <div class="city-card card-color m-auto rounded-3">
+                        <img src="xxx/picture/05_img.png" alt="Egypt Flag">
+                        </div>
+                        <h4 class="white-text pt-3">Egypt</h4>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="forecast-card primary-gradient rounded-4  wow fadeInDown">
+                        <div class="city-card card-color m-auto rounded-3">
+                        <img src="xxx/picture/06_img.png" alt="Nepal Flag">
+                        </div>
+                        <h4 class="white-text pt-3">Nepal</h4>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="forecast-card primary-gradient rounded-4  wow fadeInDown">
+                        <div class="city-card card-color m-auto rounded-3">
+                        <img src="xxx/picture/07_img.png" alt="India Flag">
+                        </div>
+                        <h4 class="white-text pt-3">India</h4>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="forecast-card primary-gradient rounded-4  wow fadeInDown">
+                        <div class="city-card card-color m-auto rounded-3">
+                        <img src="xxx/picture/08_img.png" alt="UK Flag" class="rounded-0 img-fluid">
+                        </div>
+                        <h4 class="white-text pt-3">UK</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Top Weather Section-->
+
+     <!--Start News Section-->
+     <section class="blog-section body-color py-5">
+        <div class="container">
+            <div class="py-3 text-center">
+                    <h2 class="heading-text h1 fw-bold wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">Weather Highlights</h2>
+                    <p class="para-text wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">Lorem ipsum dolor sit amet, consectetur adipiscing elit Bibendum cursus</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">
+                    <div class="card blog-card rounded-0 h-100">
+                        <img src="xxx/picture/01_img2.webp" class="card-img-top rounded-0" alt="Blog xxx/image">
+                        <div class="card-body card-color rounded-0">
+                            <h5 class="card-title heading-text fw-bold"><a href="news-details.html">Weather Updates You Should Know</a></h5>
+                            <span class="mb-3 para-text">By John Doe • October 17, 2024</span>
+                            <p class="para-text pt-3">Discover how climate change impacts our world and what steps can be
+                                taken to mitigate its effects.</p>
+                            <a href="news-details.html" class="heading-text fw-semibold read-more-btn">Read More <svg class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com --> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s;">
+                    <div class="card blog-card rounded-0 h-100">
+                        <img src="xxx/picture/02_img2.webp" class="card-img-top rounded-0" alt="Blog xxx/image">
+                        <div class="card-body card-color rounded-0">
+                            <h5 class="card-title heading-text fw-bold"><a href="news-details.html">Tips for Preparing for Monsoon</a></h5>
+                            <span class="mb-3 para-text">By Sarah Lee • October 10, 2024</span>
+                            <p class="para-text pt-3">Discover how climate change impacts our world and what steps can be
+                                taken to mitigate its effects.</p>
+                            <a href="news-details.html" class="heading-text fw-semibold read-more-btn">Read More <svg class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com --> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s;">
+                    <div class="card blog-card rounded-0 h-100">
+                        <img src="xxx/picture/03_img2.webp" class="card-img-top rounded-0" alt="Blog xxx/image">
+                        <div class="card-body card-color rounded-0">
+                            <h5 class="card-title heading-text fw-bold"><a href="news-details.html">How Weather Affects Mood</a></h5>
+                            <span class="mb-3 para-text">By Emma Watson • September 29, 2024</span>
+                            <p class="para-text pt-3">Discover how climate change impacts our world and what steps can be
+                                taken to mitigate its effects.</p>
+                            <a href="news-details.html" class="heading-text fw-semibold read-more-btn">Read More <svg class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com --> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End News Section-->
+
+    <!--Start Contact Section-->
+    <section class="primary-gradient py-5">
+        <div class="container position-relative">
+            <img src="xxx/picture/Suncloud.png" width="150" class="position-absolute ws-img top-0 end-0" alt="">
+            <img src="xxx/picture/Suncloud.png" width="150" class="position-absolute ws-img bottom-0 start-0" alt="">
+                <div class="headings py-3 text-center wow animate__animated animate__zoomIn">
+                    <h2 class="white-text h1 fw-bold py-4">Stay Connected with the Weather,<br>
+                        Stay Prepared!</h2>
+                 </div>
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-5">
+                    <div class="my-5">
+                            <div class="d-flex mb-4 gap-4 align-items-center wow fadeInUp">
+                                <div class="contact-iconbg">
+                                  <i class="fa-solid fa-location-dot secondary-text fs-3"></i>
+                                </div>
+                                <div>
+                                    <h5 class="white-text m-0 fs-3 py-3 fw-semibold">Location</h5>
+                                    <p class="white-text m-0">2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4 gap-4 align-items-center wow fadeInUp">
+                                <div class="contact-iconbg card-bg shadow">
+                                    <i class="fa-solid fa-phone secondary-text fs-3"></i>
+                                </div>
+                                <div>
+                                    <h5 class="white-text m-0 fs-3  py-3 fw-semibold">Phone Number</h5>
+                                    <p class="white-text m-0 pb-2"> <a href="#">(704) 555-0137</a></p>
+                                    <p class="white-text m-0"> <a href="#">(704) 555-0126</a></p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4 gap-4 align-items-center wow fadeInUp">
+                                <div class="contact-iconbg card-bg shadow">
+                                   <i class="fa-solid fa-envelope secondary-text fs-3"></i>
+                                </div>
+                                <div>
+                                    <h5 class="white-text m-0 fs-3  py-3 fw-semibold">Email</h5>
+                                    <p class="white-text m-0 pb-2"> <a href="#">info@example.com</a></p>
+                                    <p class="white-text m-0"> <a href="#">example@gmail.com</a></p>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+                <div class="col-md-12 col-lg-7 mb-3 mb-lg-0">
+                    <div class="p-4 rounded-5 alt-color py-5">
+                        <h4 class="text-capitalize heading-text m-0 mb-3 fw-semibold">Leave us a Message</h4>
+                        <p class="para-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate iusto
+                            dolor magni voluptas. Libero dolore deserunt corrupti expedita necessitatibus</p>
+                        <form id="contactForm" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <label for="name" class="heading-text fw-semibold mb-2">Name</label>
+                                    <input type="text" class="form-control form-color input-text shadow-none py-3 rounded-3" id="name" name="u_name" placeholder="Enter Your name" required="">
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <label for="email" class="heading-text fw-semibold mb-2">Email</label>
+                                    <input type="email" class="form-control form-color input-text shadow-none py-3 rounded-3" id="email" name="u_email" placeholder="Enter Your email" required="">
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <label for="phone" class="heading-text fw-semibold mb-2">Phone</label>
+                                    <input type="text" class="form-control form-color input-text shadow-none py-3 rounded-3" id="phone" name="phone" placeholder="Enter Your phone" required="">
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <label for="subject" class="heading-text fw-semibold mb-2">Subject</label>
+                                    <input type="text" class="form-control form-color input-text shadow-none py-3 rounded-3" id="subject" name="subject" placeholder="Enter Your subject" required="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="heading-text fw-semibold mb-2">Message</label>
+                                    <textarea name="message" id="message" rows="4" class="w-100 form-control form-control form-color input-text shadow-none rounded-3" placeholder="Type Your Message Here...."></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn primary-btn px-5 rounded-pill  fw-medium">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Contact Section-->
+
+    <!--Start Newsletter Section-->
+    <section class="newsletter-main body-color py-5" id="subscribe">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-3 mb-lg-0">
+                    <h3 class="text-capitalize m-0 mb-2 heading-text h1 fw-bold wow animate__animated animate__zoomIn">Subscribe Our News letter For Weather Update</h3>
+                    <p class="m-0 para-text wow animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam magni
+                        provident sapiente voluptate debitis perferendis modi error, a deleniti consectetur.</p>
+                </div>
+                <div class="col-lg-7">
+                    <form id="newsletter" novalidate="novalidate">
+                        <div class="input-group position-relative bg-transparent border-0  border rounded-pill  wow animate__animated animate__zoomIn">
+                            <input type="text" class="form-control shadow-none secondary-font form-color rounded-pill" placeholder="Enter Your Email" name="news_email" id="news_email" required="" aria-label="user email" aria-describedby="button-addon2">
+                            <button type="submit" class="btn primary-btn secondary-font rounded-pill mt-0 position-absolute" id="button-addon2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Newsletter Section-->
+
+    <!--Start City-Slider Section-->
+    <section class="py-5 alt-color">
+    <div class="slider city-slider container-fluid">
+        <div class="slide-item">
+            <img src="xxx/picture/01_img3.webp" alt="New York City">
+            <div class="slide-caption">
+                <h5>New York City</h5>
+                <span>Jan-23-2024</span>
+            </div>
+        </div>
+        <div class="slide-item">
+            <img src="xxx/picture/02-img.webp" alt="Paris City">
+            <div class="slide-caption">
+                <h5>Paris City</h5>
+                <span>July-25-2024</span>
+            </div>
+        </div>
+        <div class="slide-item">
+            <img src="xxx/picture/03_img3.webp" alt="Canada">
+            <div class="slide-caption">
+                <h5>Canada</h5>
+                <span>March-8-2024</span>
+            </div>
+        </div>
+        <div class="slide-item">
+            <img src="xxx/picture/04_img1.webp" alt="New York City">
+            <div class="slide-caption">
+                <h5>New York City</h5>
+                <span>Jan-23-2024</span>
+            </div>
+        </div>
+        <div class="slide-item">
+            <img src="xxx/picture/05_img.webp" alt="Rainbow">
+            <div class="slide-caption">
+                <h5>Rainbow</h5>
+                <span>Jan-23-2024</span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--End City-Slider Section-->
+
+    <!--Start Footer Section-->
+    <footer class="footer-section pt-0 py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <div class="logo py-4 wow fadeIn" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                  <img src="xxx/picture/logo.png" alt="logo">
+              </div>
+            </div>
+            <div class="row wow zoomIn" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                      <ul class="list-unstyled d-flex flex-wrap gap-4 gap-0 gap-lg-5  justify-content-center align-items-center m-auto py-4 footer-links">
+                        <li> <a href="" class="white-text text-uppercase">Home</a> </li>
+                        <li> <a href="about.html" class="white-text text-uppercase">About</a> </li>
+                        <li> <a href="news.html" class="white-text text-uppercase">News</a> </li>
+                        <li> <a href="forecast.html" class="white-text text-uppercase">Forecast</a> </li>
+                        <li> <a href="climate-change.html" class="white-text text-uppercase">Climate Change</a> </li>
+                        <li> <a href="contact.html" class="white-text text-uppercase">Contact</a> </li>
+                      </ul>
+                </div>
+                <div class="d-flex justify-content-center align-items-center pt-3 wow fadeIn" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                    <a class="footer-social-links" href="javascript:void(0)" aria-label="facebook"><i class="fab fa-facebook-f icons"></i></a>
+                    <a class="footer-social-links" href="javascript:void(0)" aria-label="instagram"><i class="fab fa-instagram icons"></i></a>
+                    <a class="footer-social-links" href="javascript:void(0)" aria-label="twitter"><i class="fa-brands fa-x-twitter icons"></i></a>
+                    <a class="footer-social-links" href="javascript:void(0)" aria-label="linkedin"><i class="fab fa-linkedin-in icons"></i></a>
+                </div>
+            </div>
+    </footer>
+    <!--End Footer Section-->
+
+    <!--Start Copyright Section-->
+    <div class="text-center primary-gradient p-3">
+        <p class="white-text secondary-font m-0 p-0">Copyright &copy; 2025.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+    </div>
+     <!--End Copyright Section-->
+
+   <!-- back to top -->
+    <a class="btn primary-btn back-to-top border-0  w-unset py-3 px-3 shadow primary-color" id="backtotop">
+     <i class="fa-solid fa-angle-up white-text"></i>
+    </a>
+   <!-- back to top end -->
+
+    <!-- JS -->
+    <script src="xxx/js/jquery.min.js"></script>
+    <script src="xxx/js/all.min.js"></script>
+    <script src="xxx/js/bootstrap.min.js"></script>
+    <script src="xxx/js/wow.min.js"></script>
+    <script src="xxx/js/jquery.validate.js"></script>
+    <script src="xxx/js/slick.js"></script>
+    <script src="xxx/js/slick.min.js"></script>
+    <script src="xxx/js/select2.min.js"></script>
+    <script src="xxx/js/chart.js"></script>
+    <script src="xxx/js/main.js"></script>
+</body>
+
+</html>
+

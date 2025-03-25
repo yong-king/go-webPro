@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>Helo</title>
+</head>
+<body>
+<p>user</p>
+    <p>Name {{ .user.Name }}</p>
+    <p>Gender {{ .suer.Gender }}</p>
+    <p>Age {{ .user.Age }}</p>
+<p>maps</p>
+    <p>姓名 {{ .m.name}}</p>
+    <p>性别 {{ .m.gender}}</p>
+    <p>年龄 {{ .m.age}}</p>
+
+<hr>
+{{ $v1 := 100}}
+{{ $age := .m.age}}
+<hr>
+{{ if $v1 }}
+{{ $v1 }}
+{{ else }}
+啥都没有
+{{ end }}
+
+<hr>
+{{ if lt .m.age 22}}
+好好学习
+{{ else }}
+还好好工做
+{{ end }}
+
+<hr>
+{{ range $idx, $hobby := .hobby}}
+<p>{{$idx}} - {{$hobby}}</p>
+{{else}}
+啥也没有
+{{end}}
+
+<hr>
+<p>m1</p>
+{{with .m}}
+<p>{{ .name }}</p>
+{{end}}
+
+</body>
+</html>
