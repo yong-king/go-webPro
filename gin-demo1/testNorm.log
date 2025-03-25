@@ -1,0 +1,4 @@
+2025/03/18 20:28:30 http.Get(url) failed, err:Get "www.baidu.com": unsupported protocol scheme ""
+2025/03/18 20:28:30 Status Code for http://www.taobao.com : 200 OK
+2025/03/18 20:28:53 http.Get(url) failed, err:Get "www.baidu.com": unsupported protocol scheme ""
+2025/03/18 20:29:23 http.Get(url) failed, err:Get "http://www.google.com": dial tcp 127.0.0.2:80: i/o timeout

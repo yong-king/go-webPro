@@ -1,0 +1,38 @@
+{"level":"debug","ts":1742352644.813631,"msg":"Trying to hit GET request for www.baidu.com"}
+{"level":"error","ts":1742352644.8140318,"msg":"Error fetching URL www.baidu.com : Error = Get \"www.baidu.com\": unsupported protocol scheme \"\""}
+{"level":"debug","ts":1742352644.81404,"msg":"Trying to hit GET request for http://www.baidu.com"}
+{"level":"info","ts":1742352645.8996081,"msg":"Success! statusCode = 200 OK for URL http://www.baidu.com"}
+1.742352724857781e+09	debug	Trying to hit GET request for www.baidu.com
+1.74235272485859e+09	error	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+1.742352724858604e+09	debug	Trying to hit GET request for http://www.baidu.com
+1.742352724899914e+09	info	Success! statusCode = 200 OK for URL http://www.baidu.com
+1.74235287703328e+09	debug	log/logger.go:62	Trying to hit GET request for www.baidu.com
+1.742352877034025e+09	error	log/logger.go:65	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+1.742352877034045e+09	debug	log/logger.go:62	Trying to hit GET request for http://www.baidu.com
+1.742352877074611e+09	info	log/logger.go:67	Success! statusCode = 200 OK for URL http://www.baidu.com
+1.742352995883007e+09	debug	log/logger.go:62	Trying to hit GET request for www.baidu.com
+1.74235299588356e+09	error	log/logger.go:65	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+1.7423529958835719e+09	debug	log/logger.go:62	Trying to hit GET request for http://www.baidu.com
+1.742352995929043e+09	info	log/logger.go:67	Success! statusCode = 200 OK for URL http://www.baidu.com
+2025-03-19T10:58:19.231+0800	DEBUG	log/logger.go:62	Trying to hit GET request for www.baidu.com
+2025-03-19T10:58:19.232+0800	ERROR	log/logger.go:65	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2025-03-19T10:58:19.232+0800	DEBUG	log/logger.go:62	Trying to hit GET request for http://www.baidu.com
+2025-03-19T10:58:19.275+0800	INFO	log/logger.go:67	Success! statusCode = 200 OK for URL http://www.baidu.com
+2025-03-19T10:59:49.438+0800	DEBUG	log/logger.go:77	Trying to hit GET request for www.baidu.com
+2025-03-19T10:59:49.439+0800	ERROR	log/logger.go:80	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2025-03-19T10:59:49.439+0800	DEBUG	log/logger.go:77	Trying to hit GET request for http://www.baidu.com
+2025-03-19T10:59:49.481+0800	INFO	log/logger.go:82	Success! statusCode = 200 OK for URL http://www.baidu.com
+2025-03-19T11:03:14.100+0800	DEBUG	gin-demo/main.go:123	Trying to hit GET request for www.baidu.com
+2025-03-19T11:03:14.101+0800	ERROR	gin-demo/main.go:123	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2025-03-19T11:03:14.101+0800	DEBUG	gin-demo/main.go:124	Trying to hit GET request for http://www.baidu.com
+2025-03-19T11:03:14.270+0800	INFO	gin-demo/main.go:124	Success! statusCode = 200 OK for URL http://www.baidu.com
+2025-03-19T11:05:14.098+0800	DEBUG	gin-demo/main.go:123	Trying to hit GET request for www.baidu.com
+2025-03-19T11:05:14.099+0800	ERROR	gin-demo/main.go:123	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2025-03-19T11:05:14.099+0800	DEBUG	gin-demo/main.go:124	Trying to hit GET request for http://www.baidu.com
+2025-03-19T11:05:14.141+0800	INFO	gin-demo/main.go:124	Success! statusCode = 200 OK for URL http://www.baidu.com
+2025-03-19T11:09:00.847+0800	DEBUG	gin-demo/main.go:123	Trying to hit GET request for www.baidu.com
+2025-03-19T11:09:00.848+0800	ERROR	gin-demo/main.go:123	Error fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2025-03-19T11:09:00.848+0800	DEBUG	gin-demo/main.go:124	Trying to hit GET request for http://www.baidu.com
+2025-03-19T11:09:00.915+0800	INFO	gin-demo/main.go:124	Success! statusCode = 200 OK for URL http://www.baidu.com
+2025-03-19T11:57:02.591+0800	INFO	gin@v1.10.0/context.go:185	/hello	{"statusCode": 200, "method": "GET", "path": "/hello", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36", "errors": "", "cost": 0.000334375}
+2025-03-19T11:57:02.671+0800	INFO	gin@v1.10.0/context.go:185	/favicon.ico	{"statusCode": 404, "method": "GET", "path": "/favicon.ico", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36", "errors": "", "cost": 0.000001042}
