@@ -1,0 +1,11 @@
+{"level":"INFO","ts":"2025-03-26T15:59:38.370+0800","caller":"logger/logger.go:77","msg":"init logger success!"}
+{"level":"INFO","ts":"2025-03-26T16:00:30.978+0800","caller":"logger/logger.go:77","msg":"init logger success!"}
+{"level":"INFO","ts":"2025-03-26T16:01:52.437+0800","caller":"logger/logger.go:77","msg":"init logger success!"}
+{"level":"ERROR","ts":"2025-03-26T16:01:52.467+0800","caller":"controller/post.go:34","msg":"CreatePostHandler getCurrentUserID failed","error":"用户未登录"}
+{"level":"INFO","ts":"2025-03-26T16:02:17.199+0800","caller":"logger/logger.go:77","msg":"init logger success!"}
+{"level":"ERROR","ts":"2025-03-26T16:02:37.948+0800","caller":"controller/post.go:34","msg":"CreatePostHandler getCurrentUserID failed","error":"用户未登录"}
+{"level":"INFO","ts":"2025-03-26T16:04:27.550+0800","caller":"logger/logger.go:77","msg":"init logger success!"}
+{"level":"ERROR","ts":"2025-03-26T16:04:27.581+0800","caller":"controller/post.go:34","msg":"CreatePostHandler getCurrentUserID failed","error":"用户未登录"}
+{"level":"INFO","ts":"2025-03-26T16:05:37.128+0800","caller":"logger/logger.go:77","msg":"init logger success!"}
+{"level":"ERROR","ts":"2025-03-26T16:05:37.152+0800","caller":"controller/post.go:34","msg":"CreatePostHandler getCurrentUserID failed","error":"用户未登录"}
+{"level":"INFO","ts":"2025-03-26T16:06:55.396+0800","caller":"logger/logger.go:77","msg":"init logger success!"}

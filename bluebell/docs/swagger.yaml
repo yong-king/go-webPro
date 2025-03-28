@@ -1,0 +1,511 @@
+basePath: /api/v1
+definitions:
+  controller._ResponseAuth:
+    properties:
+      code:
+        allOf:
+        - $ref: '#/definitions/controller.ResCode'
+        description: 业务响应状态码
+      data:
+        allOf:
+        - $ref: '#/definitions/models.User'
+        description: 社区详细信息
+      msg:
+        description: 提示信息，与 Response 结构体对齐
+        type: string
+    type: object
+  controller._ResponseCommunityDetailLists:
+    properties:
+      code:
+        allOf:
+        - $ref: '#/definitions/controller.ResCode'
+        description: 业务响应状态码
+      data:
+        description: 社区详细信息
+        items:
+          $ref: '#/definitions/models.CommunityDetail'
+        type: array
+      msg:
+        description: 提示信息，与 Response 结构体对齐
+        type: string
+    type: object
+  controller._ResponseCommunityLists:
+    properties:
+      code:
+        allOf:
+        - $ref: '#/definitions/controller.ResCode'
+        description: 业务响应状态码
+      data:
+        description: 社区列表
+        items:
+          $ref: '#/definitions/models.Community'
+        type: array
+      msg:
+        description: 提示信息，与 Response 结构体对齐
+        type: string
+    type: object
+  controller._ResponsePostList:
+    properties:
+      code:
+        allOf:
+        - $ref: '#/definitions/controller.ResCode'
+        description: 业务响应状态码
+      data:
+        allOf:
+        - $ref: '#/definitions/models.Post'
+        description: 数据
+      msg:
+        description: 提示信息，与 Response 结构体对齐
+        type: string
+    type: object
+  controller._ResponsePostLists:
+    properties:
+      code:
+        allOf:
+        - $ref: '#/definitions/controller.ResCode'
+        description: 业务响应状态码
+      data:
+        description: 帖子详情列表
+        items:
+          $ref: '#/definitions/models.PostDetail'
+        type: array
+      msg:
+        description: 提示信息，与 Response 结构体对齐
+        type: string
+    type: object
+  controller._ResponseUser:
+    properties:
+      code:
+        allOf:
+        - $ref: '#/definitions/controller.ResCode'
+        description: 业务响应状态码
+      data:
+        allOf:
+        - $ref: '#/definitions/models.ParamSignUp'
+        description: 社区详细信息
+      msg:
+        description: 提示信息，与 Response 结构体对齐
+        type: string
+    type: object
+  controller._ResponseVote:
+    properties:
+      code:
+        allOf:
+        - $ref: '#/definitions/controller.ResCode'
+        description: 业务响应状态码
+      data:
+        allOf:
+        - $ref: '#/definitions/models.ParamVoteData'
+        description: // 使用指针，防止空结构体导致返回 nil
+      msg:
+        description: 提示信息，与 Response 结构体对齐
+        type: string
+    type: object
+  controller.ResCode:
+    enum:
+    - 1000
+    - 1001
+    - 1002
+    - 1003
+    - 1004
+    - 1005
+    - 1006
+    - 1007
+    - 1008
+    - 1009
+    type: integer
+    x-enum-varnames:
+    - CodeSuccess
+    - CodeInvalidParam
+    - CodeInvalidPassword
+    - CodeUserNotExit
+    - CodeUserExit
+    - CodeServeBusy
+    - CodeNeedLogin
+    - CodeInvalidToken
+    - CodeMutilUser
+    - CodeServerBusy
+  models.Community:
+    properties:
+      id:
+        example: "0"
+        type: string
+      name:
+        type: string
+    type: object
+  models.CommunityDetail:
+    properties:
+      create_time:
+        type: string
+      id:
+        example: "0"
+        type: string
+      introduction:
+        type: string
+      name:
+        type: string
+      update_time:
+        type: string
+    type: object
+  models.ParamSignUp:
+    properties:
+      password:
+        type: string
+      re_password:
+        type: string
+      username:
+        type: string
+    required:
+    - password
+    - re_password
+    - username
+    type: object
+  models.ParamVoteData:
+    properties:
+      direction:
+        description: 投票的值 -1， 0， 1
+        enum:
+        - 0
+        - 1
+        - -1
+        type: integer
+      post_id:
+        description: 帖子id
+        type: string
+    type: object
+  models.Post:
+    properties:
+      author_id:
+        example: "0"
+        type: string
+      community_id:
+        type: integer
+      content:
+        type: string
+      create_time:
+        type: string
+      id:
+        type: integer
+      title:
+        type: string
+    required:
+    - community_id
+    - content
+    - id
+    - title
+    type: object
+  models.PostDetail:
+    properties:
+      author_id:
+        example: "0"
+        type: string
+      author_name:
+        type: string
+      community:
+        $ref: '#/definitions/models.CommunityDetail'
+      community_id:
+        type: integer
+      content:
+        type: string
+      create_time:
+        type: string
+      id:
+        type: integer
+      title:
+        type: string
+      vote_num:
+        type: integer
+    required:
+    - community_id
+    - content
+    - id
+    - title
+    type: object
+  models.User:
+    properties:
+      password:
+        type: string
+      token:
+        type: string
+      userID:
+        type: integer
+      username:
+        type: string
+    required:
+    - password
+    - username
+    type: object
+host: 127.0.0.1:8080
+info:
+  contact:
+    name: youngking
+    url: www.youngking998.top
+  description: 社区论坛
+  title: 社区论坛项目接口文档
+  version: "1.0"
+paths:
+  /api/v1/community:
+    get:
+      consumes:
+      - application/json
+      description: 获取社区列表，包括社区id和名称
+      parameters:
+      - description: Bearer JWT
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 社区列表“
+          schema:
+            $ref: '#/definitions/controller._ResponseCommunityLists'
+      security:
+      - ApiKeyAuth: []
+      summary: 获取社区的列表
+      tags:
+      - 社区相关接口
+  /api/v1/community/{id}:
+    get:
+      consumes:
+      - application/json
+      description: 根据社区id获取单个社区的详细信息，包括id,名称,介绍,创建时间和修改时间
+      parameters:
+      - description: Bearer JWT
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: 社区ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 社区详细信息“
+          schema:
+            $ref: '#/definitions/controller._ResponseCommunityDetailLists'
+      security:
+      - ApiKeyAuth: []
+      summary: 获取单个社区的详细信息
+      tags:
+      - 社区相关接口
+  /api/v1/login:
+    post:
+      consumes:
+      - application/json
+      description: 根据用户名和密码登录，获取token
+      parameters:
+      - description: 用户名
+        in: body
+        name: username
+        required: true
+        schema:
+          type: string
+      - description: 密码
+        in: body
+        name: password
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 用户信息和 token
+          schema:
+            $ref: '#/definitions/controller._ResponseAuth'
+      summary: 用户登录
+      tags:
+      - 用户相关接口
+  /api/v1/post:
+    post:
+      consumes:
+      - application/json
+      description: 根据社区id上传帖子到特定的社区
+      parameters:
+      - description: Bearer JWT
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: 帖子参数
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/models.Post'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller._ResponsePostList'
+      security:
+      - ApiKeyAuth: []
+      summary: 上传新帖子的接口
+      tags:
+      - 帖子相关接口
+  /api/v1/post/{id}:
+    get:
+      consumes:
+      - application/json
+      description: 根据帖子id获取帖子信息，包括帖子作者和社区信息
+      parameters:
+      - description: Bearer JWT
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: 帖子 ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller._ResponsePostList'
+      security:
+      - ApiKeyAuth: []
+      summary: 获取单个帖子详情
+      tags:
+      - 帖子相关接口
+  /api/v1/post2:
+    get:
+      consumes:
+      - application/json
+      description: 根据指定的排序方式("time", "score")以及分页和偏移量返回帖子详情
+      parameters:
+      - description: Bearer JWT
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: 分页值（默认 1）
+        in: query
+        name: page
+        type: integer
+      - description: 偏移量值 （默认 10）
+        in: query
+        name: size
+        type: integer
+      - description: 排序方式 (默认 time, 可选 time, score)
+        in: query
+        name: order
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 帖子列表
+          schema:
+            $ref: '#/definitions/controller._ResponsePostLists'
+      security:
+      - ApiKeyAuth: []
+      summary: 按照指定的顺序返回排序后的帖子
+      tags:
+      - 帖子相关接口
+  /api/v1/posts:
+    get:
+      consumes:
+      - application/json
+      description: 根据分页和偏移量到数据库中获取帖子列表，包括帖子、作者和社区信息
+      parameters:
+      - description: Bearer JWT
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: 分页值（默认 1）
+        in: query
+        name: page
+        type: integer
+      - description: 偏移量值 （默认 10）
+        in: query
+        name: size
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 帖子列表
+          schema:
+            $ref: '#/definitions/controller._ResponsePostLists'
+      security:
+      - ApiKeyAuth: []
+      summary: 获取帖子列表
+      tags:
+      - 帖子相关接口
+  /api/v1/signup:
+    post:
+      consumes:
+      - application/json
+      description: 根据用户传入信息注册用户，包括用户名和密码
+      parameters:
+      - description: 用户名
+        in: body
+        name: username
+        required: true
+        schema:
+          type: string
+      - description: 密码
+        in: body
+        name: password
+        required: true
+        schema:
+          type: string
+      - description: 重复输入的密码，需与密码一致
+        in: body
+        name: re_password
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller._ResponseUser'
+      summary: 用户注册
+      tags:
+      - 用户相关接口
+  /api/v1/vote:
+    post:
+      consumes:
+      - application/json
+      description: 根据用户名给指定的帖子投票，包括帖子id和投票类型(-1,0,1)
+      parameters:
+      - description: 帖子ID
+        in: body
+        name: post_id
+        required: true
+        schema:
+          type: string
+      - description: 投票方向（1：支持，0：取消，-1：反对）
+        in: body
+        name: direction
+        required: true
+        schema:
+          type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller._ResponseVote'
+      summary: 用户给帖子投票
+      tags:
+      - 投票相关接口
+swagger: "2.0"

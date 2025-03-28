@@ -33,7 +33,7 @@ func JwtAuthMiddleWare() gin.HandlerFunc {
 			return
 		}
 		// 根据名称拿到用户id
-		
+
 		// 检测是否有用户登录
 		token, err := redis.FetchAuth(mc.UserID)
 		if err != nil && err != redis.ErrorNoAuth {

@@ -12,6 +12,16 @@ import (
 )
 
 // SignUpHandler 用户注册
+// @Summary 用户注册
+// @Description 根据用户传入信息注册用户，包括用户名和密码
+// @Tags 用户相关接口
+// @Accept application/json
+// @Produce application/json
+// @Param username body string true "用户名"
+// @Param password body string true "密码"
+// @Param re_password body string true "重复输入的密码，需与密码一致"
+// @Success 200 {object} _ResponseUser
+// @Router /api/v1/signup [post]
 func SignuUpHandler(c *gin.Context) {
 	// 1.获取参数信息
 	p := new(models.ParamSignUp)
@@ -44,6 +54,15 @@ func SignuUpHandler(c *gin.Context) {
 }
 
 // LoginHandler 用户登录
+// @Summary 用户登录
+// @Description 根据用户名和密码登录，获取token
+// @Tags 用户相关接口
+// @Accept application/json
+// @Produce application/json
+// @Param username body string true "用户名"
+// @Param password body string true "密码"
+// @Success 200 {object} _ResponseAuth "用户信息和 token"
+// @Router /api/v1/login [post]
 func LoginHandler(c *gin.Context) {
 	// 1.获取参数信息及校验
 	p := new(models.ParamLogin)

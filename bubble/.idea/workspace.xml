@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efb953af-b7e1-440e-be5d-aae757816d7f" name="Changes" comment="" />
+    <list default="true" id="efb953af-b7e1-440e-be5d-aae757816d7f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../bluebell/bluebell.log" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/bluebell.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/conf/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/conf/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/controller/community.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/controller/community.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/controller/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/controller/post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/controller/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/controller/request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/controller/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/dao/mysql/community.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/dao/mysql/community.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/dao/mysql/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/dao/mysql/post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/dao/redis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/dao/redis/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/dao/redis/vote.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/dao/redis/vote.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/logic/community.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/logic/community.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/logic/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/logic/post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/middlewares/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/middlewares/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/models/params.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/models/params.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/models/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/models/post.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluebell/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bluebell/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cbc58c91-cc83-477b-82df-77de19bac904.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cbc58c91-cc83-477b-82df-77de19bac904.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +43,7 @@
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../Go_Project/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.7.darwin-arm64" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../Go_Project/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.7.darwin-arm64/src/_go.mod" root0="SKIP_INSPECTION" />
@@ -42,9 +66,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build bubble.executor": "Debug",
+    "Go Build.go build 11.go.executor": "Run",
+    "Go Build.go build 111.go.executor": "Run",
+    "Go Build.go build 222.go.executor": "Debug",
+    "Go Build.go build bubble.executor": "Run",
     "Go Build.go build bubble/pkg/snowflake.executor": "Run",
     "Go Build.go build main.go.executor": "Debug",
+    "Go Test.TestCreatePostHandler in bubble/controller.executor": "Run",
+    "Go Test.TestGetPostDetailHandler in bubble/controller.executor": "Run",
+    "Go Test.TestPostData in bubble/dao/mysql.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -52,12 +82,12 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/yuanshuhao",
+    "last_opened_file_path": "/Users/yuanshuhao/Documents/go_study/go_progetct/bluebell",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "database.query.execution"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -66,7 +96,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../bluebell" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../bluebell/templates" />
       <recent name="$PROJECT_DIR$/../bluebble/models" />
     </key>
   </component>
@@ -77,7 +111,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build 222.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="bluebell" />
       <working_directory value="$PROJECT_DIR$" />
@@ -86,13 +120,53 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 11.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="bluebell" />
+      <working_directory value="$PROJECT_DIR$/../bluebell" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/../bluebell/11.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 222.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="bluebell" />
+      <working_directory value="$PROJECT_DIR$/../bluebell" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/../bluebell/222.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build bubble" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="bluebell" />
       <working_directory value="$PROJECT_DIR$/../bluebell" />
-      <kind value="PACKAGE" />
+      <kind value="FILE" />
       <package value="bubble" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/../bluebell/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCreatePostHandler in bubble/controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="bluebell" />
+      <working_directory value="$PROJECT_DIR$/../bluebell/controller" />
+      <root_directory value="$PROJECT_DIR$/../bluebell" />
+      <kind value="PACKAGE" />
+      <package value="bubble/controller" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCreatePostHandler\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGetPostDetailHandler in bubble/controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="bluebell" />
+      <working_directory value="$PROJECT_DIR$/../bluebell/controller" />
+      <root_directory value="$PROJECT_DIR$/../bluebell" />
+      <kind value="PACKAGE" />
+      <package value="bubble/controller" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGetPostDetailHandler\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -104,9 +178,17 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 222.go" />
         <item itemvalue="Go Build.go build bubble" />
+        <item itemvalue="Go Test.TestCreatePostHandler in bubble/controller" />
+        <item itemvalue="Go Build.go build 11.go" />
+        <item itemvalue="Go Test.TestGetPostDetailHandler in bubble/controller" />
       </list>
     </recent_temporary>
   </component>
@@ -138,45 +220,16 @@
           <line>28</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../bluebell/controller/post.go</url>
-          <line>21</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../bluebell/controller/post.go</url>
-          <line>29</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../bluebell/dao/mysql/post.go</url>
-          <line>11</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../bluebell/controller/request.go</url>
-          <line>14</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../bluebell/logic/post.go</url>
-          <line>75</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../bluebell/logic/post.go</url>
-          <line>48</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/../bluebell/controller/post.go</url>
-          <line>67</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="DlvErrorBreakpoint" />
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="citations[i]" language="go" />
+        <watch expression="i" language="go" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -19,6 +19,13 @@ import (
 	"time"
 )
 
+// @title 社区论坛项目接口文档
+// @version 1.0
+// @description 社区论坛
+// @contact.name youngking
+// @contact.url www.youngking998.top
+// @host 127.0.0.1:8080
+// @BasePath /api/v1
 func main() {
 	// 配置文件路径
 	var fileName string

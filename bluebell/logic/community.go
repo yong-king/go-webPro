@@ -9,6 +9,6 @@ func CommunityList() (communityList []*models.Community, err error) {
 	return mysql.CommunityList()
 }
 
-func CommunityDetailData(id int64) (communityDetailData *[]models.CommunityDetail, err error) {
-	return mysql.CommunityDetailData(id)
+func CommunityDetailData(id int64) (communityDetailData *models.CommunityDetail, err error) {
+	return mysql.CommunityDetailDataById(id)
 }

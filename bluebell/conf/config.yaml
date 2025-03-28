@@ -1,6 +1,6 @@
-name: bluebell
+name: "bluebell"
 version: "v 0.0.1"
-mode: "dev"
+mode: "release"
 machineID: 1
 startTime: "2026-03-21"
 port: ":8080"
@@ -14,9 +14,9 @@ log:
 
 mysql:
   host: "127.0.0.1"
-  port: 3307
+  port: 3306
   user: "root"
-  password: "youngking98"
+  password: "root1234"
   dbname: "bluebell"
   maxOpenCoons: 200
   maxIdleCoons: 10
@@ -24,7 +24,7 @@ mysql:
 redis:
   host: "127.0.0.1"
   port: 6379
-  password: "youngking98"
+  password: ""
   db: 0
   poolSize: 20
   maxIdleCoons: 10

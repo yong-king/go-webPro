@@ -2,6 +2,7 @@ package controller
 
 import (
 	"errors"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"strconv"
 )
@@ -12,6 +13,7 @@ var ErrorUserNotLogin = errors.New("用户未登录")
 
 func getCurrentUserID(c *gin.Context) (userId int64, err error) {
 	value, ok := c.Get(CtxUserIDKey)
+	fmt.Printf("value: %v, ok: %v\n", value, ok)
 	if !ok {
 		err = ErrorUserNotLogin
 		return

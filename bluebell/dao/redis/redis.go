@@ -3,7 +3,6 @@ package redis
 import (
 	"bubble/setting"
 	"context"
-	"errors"
 	"fmt"
 	"github.com/redis/go-redis/v9"
 	"go.uber.org/zap"
@@ -11,8 +10,6 @@ import (
 )
 
 var rdb *redis.Client
-var ErrorNoAuth = errors.New("user not exist")
-var ErrorGetRedis = errors.New("get redis error")
 
 func Init(cfg *setting.RedisConfig) (err error) {
 	// 连接redis
